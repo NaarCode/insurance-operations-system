@@ -35,6 +35,17 @@ These capabilities are described from a source review, not from an independent p
 
 The administration interface and Bale integration communicate through a central API and shared data model. [Engineering overview](docs/ARCHITECTURE.md).
 
+
+## Selected source example
+
+A small, source-derived code sample is available: [vehicle plate normalization](examples/vehicle-plate.ts). It illustrates an isolated engineering technique used in the original project. The associated [test file](examples/vehicle-plate.test.ts) uses synthetic inputs and contains no customer or production data.
+
+```sh
+node --experimental-strip-types --test examples/vehicle-plate.test.ts
+```
+
+The example has been separated from the original application and may be lightly adapted for standalone review. **It is not the full product, a deployment package, or a representation of every proprietary module.**
+
 ## Scope
 
 This is an operations-management platform. The showcase does **not** claim direct policy issuance through an insurer's core system, live access to an insurer's internal database, or an online payment gateway.
